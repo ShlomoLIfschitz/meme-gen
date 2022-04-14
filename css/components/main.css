@@ -1,0 +1,23 @@
+.galery{
+    height: 60vh;
+    border-left: 3px solid rgb(128 128 128 / 15%);
+    border-right: 3px solid rgb(128 128 128 / 15%);
+    /* display: grid; */
+    grid-template: repeat(3, 1fr)/repeat(6 , 1fr);
+    gap: 15px;
+}
+
+/* .img{
+    width: 13vw;
+} */
+
+.img>* {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+} 
+
+.img>*:hover {
+    cursor: pointer;
+    border: 3px solid rgb(23, 148, 193);
+}

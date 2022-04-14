@@ -1,0 +1,17 @@
+header{
+    background:linear-gradient(rgb(59, 154, 156) ,rgb(145, 176, 145)) ;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 20px;
+}
+
+.logo{
+    height: 5rem;
+    width: 18rem;
+}
+
+.logo-img{
+    height: 100%;
+    width: 100%;
+}
