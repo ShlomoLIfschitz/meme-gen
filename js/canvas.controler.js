@@ -11,13 +11,13 @@ function renderCanvas() {
     </div>
     <div class="switch-lines">
         <img class="editor-img up-down-line"
-            src="img/icons/up-and-down-opposite-double-arrows-side-by-side.png" alt="">
+            src="img/icons/up-and-down-opposite-double-arrows-side-by-side.png" onclick="onChangeLine()" alt="">
     </div>
     <div class="add-line">
-        <img class="editor-img add-line" src="img/icons/add.png" alt="">
+        <img class="editor-img add-line" src="img/icons/add.png" onclick="onSetNewLine()" alt="">
     </div>
     <div class="trash">
-        <img class="editor-img trash-line" src="img/icons/trash.png" alt="">
+        <img class="editor-img trash-line" src="img/icons/trash.png" onclick="onClearLine()" alt="">
     </div>
     <div class="big-font">
         <img class="editor-img increase-font" src="img/icons/increase font - icon.png" onclick="onSetFontSize(5)" alt="">

@@ -1,4 +1,10 @@
 footer{
     background: linear-gradient(rgb(59, 154, 156) ,rgb(145, 176, 145));
-    height: 20vh;
+    position: absolute;
+    height: 5vh;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

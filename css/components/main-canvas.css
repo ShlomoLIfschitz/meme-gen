@@ -126,4 +126,10 @@ canvas{
 
  }
     
-    
+ @media screen and (max-width:890px) {
+      .meme-editor{
+          height: 98vh;
+          flex-direction: column;
+      }
+      
+  }  
