@@ -1,22 +1,14 @@
-.main-container{
-    margin-top: 16vh;
-}
 
 
 
 .galery{
-    height: 60vh;
     border-left: 3px solid rgb(128 128 128 / 15%);
     border-right: 3px solid rgb(128 128 128 / 15%);
-    /* display: grid; */
     grid-template: repeat(3, 1fr)/repeat(6 , 1fr);
     gap: 15px;
     margin-bottom: 19.4vh;
 }
 
-/* .img{
-    width: 13vw;
-} */
 
 .img>* {
     height: 100%;
@@ -33,7 +25,6 @@
 
 @media screen and (max-width:980px){
     .galery{
-        height: 100vh;
         grid-template: repeat(6, 1fr)/repeat(3 , 1fr);
     }
 

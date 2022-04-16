@@ -15,3 +15,17 @@ header{
     height: 100%;
     width: 100%;
 }
+
+.head-btn{
+    background:linear-gradient(rgb(59, 154, 156) ,rgb(145, 176, 145)) ;
+    width: 100px;
+    height: 30;
+    border: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.head-btn:hover{
+    cursor: pointer;
+    color: lightblue;
+}

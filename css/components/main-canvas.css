@@ -1,7 +1,5 @@
 .meme-editor{
     height: 80vh;
-    background-color: gray;
-    /* display: flex; */
     justify-content: center;
     align-items: center;
     gap: 15px;
@@ -29,8 +27,6 @@ canvas{
     display: grid;
     gap: 15px;
     grid-template: repeat(6, 1fr)/repeat(5, 1fr);
-    /* grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%; */
     grid-template-areas:
     "text-line text-line text-line text-line text-line"
     "row-up-down plus . . trash"
@@ -126,10 +122,22 @@ canvas{
 
  }
     
- @media screen and (max-width:890px) {
+ @media screen and (max-width:980px) {
       .meme-editor{
+          padding: 20px;
           height: 98vh;
           flex-direction: column;
       }
+
+      canvas{
+         height:300px;
+         width: 300px;
+        }
+        
+        .editor-container{
+            height:300px;
+            width: 300px;
+            
+        }
       
   }  

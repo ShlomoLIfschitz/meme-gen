@@ -111,64 +111,8 @@ function getEvPos(ev) {
     return pos
 }
 
-// function addListeners() {
-//     let meme = getMeme()
-//     addMouseListeners()
-//     addTouchListeners()
-//     window.addEventListener('resize', () => {
-//         resizeCanvas()
-//         const center = { x: gElCanvas.width / 2, y: gElCanvas.height / 2 }
-//         if (meme.selectedLineIdx === 0) {
-//             drawText(meme.lines[gMeme.selectedLineIdx].txt, 200, 50)
-//         } else if (meme.selectedLineIdx === 1) {
-//             drawText(meme.lines[gMeme.selectedLineIdx].txt, 200, 200)
-//         } else drawText(meme.lines[gMeme.selectedLineIdx].txt, 200, 50)
-//         renderCanvas()
-//     }
-//     )
-// }
-
-// function addMouseListeners() {
-//     gElCanvas.addEventListener('mousemove', onMove)
-//     gElCanvas.addEventListener('mousedown', onDown)
-//     gElCanvas.addEventListener('mouseup', onUp)
-// }
-
-// function addTouchListeners() {
-//     gElCanvas.addEventListener('touchmove', onMove)
-//     gElCanvas.addEventListener('touchstart', onDown)
-//     gElCanvas.addEventListener('touchend', onUp)
-// }
-
-// function onDown(ev) {
-//     const pos = getEvPos(ev)
-//     if (!isLineClicked(pos)) return
-//     setLineDrag(true)
-//     gStartPos = pos
-//     document.body.style.cursor = 'grabbing'
-
-// }
-
-// function onMove(ev) {
-//     const meme = getMeme();
-//     const line = meme.lines[selectedLineIdx]
-//     if (!line.isDrag) return
-//     const pos = getEvPos(ev)
-//     const dx = pos.x - gStartPos.x
-//     const dy = pos.y - gStartPos.y
-//     moveLine(dx, dy)
-//     gStartPos = pos
-//     renderCanvas()
-// }
-
-// function onUp() {
-//     setLineDrag(false)
-//     document.body.style.cursor = 'grab'
-// }
-
-// function resizeCanvas() {
-//     const elContainer = document.querySelector('.canvas-container')
-//     gElCanvas.width = elContainer.offsetWidth
-//     gElCanvas.height = elContainer.offsetHeight
-// }
-
+function downloadCanvas(elLink) {
+    const data = gElCanvas.toDataURL()
+    elLink.href = data
+    elLink.download = 'My-smeme'
+}

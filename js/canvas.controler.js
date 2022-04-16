@@ -50,7 +50,7 @@ function renderCanvas() {
 
     </section>
 
-    <button class="download-meme" onclick="onDownload()">DOWNLOAD</button>
+    <button class="download-meme" ><a href="#" onclick="downloadCanvas(this)">DOWNLOAD</a></button>
     <button class="share-meme" onclick="onShare()">SHARE</button>
 </div>`
     elCanvas.innerHTML = strHtml
